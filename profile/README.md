@@ -8,7 +8,7 @@ Software &nbsp; / &nbsp; Data &nbsp; / &nbsp; Management
 
 [**VI · Tiếng Việt**](#tieng-viet) &nbsp; | &nbsp; [**EN · English**](#english)
 
-<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1400&amp;q=85" alt="A luminous galaxy in deep space" width="100%" />
+<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1400&amp;h=560&amp;fit=crop&amp;q=85" alt="A luminous galaxy in deep space" width="100%" />
 
 </div>
 
