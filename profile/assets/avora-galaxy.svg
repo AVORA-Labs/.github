@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-labelledby="title description">
+  <title id="title">AVORA Labs — technology with perspective</title>
+  <desc id="description">AVORA Labs wordmark beside a layered, luminous planetary form with orbital lines representing connected software, data and operations.</desc>
+  <defs>
+    <linearGradient id="space" x2="1" y2="1">
+      <stop stop-color="#0c151b"/>
+      <stop offset="0.6" stop-color="#101821"/>
+      <stop offset="1" stop-color="#1c1b21"/>
+    </linearGradient>
+    <linearGradient id="horizon" x1="0" x2="1">
+      <stop stop-color="#67d7cb" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#67d7cb" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#d6af76" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="0.35" cy="0.27" r="0.85">
+      <stop stop-color="#c6f4df"/>
+      <stop offset="0.2" stop-color="#55c7b9"/>
+      <stop offset="0.58" stop-color="#196c75"/>
+      <stop offset="0.84" stop-color="#223344"/>
+      <stop offset="1" stop-color="#0e1b29"/>
+    </radialGradient>
+    <radialGradient id="atmosphere">
+      <stop offset="0.62" stop-color="#2fb7ac" stop-opacity="0"/>
+      <stop offset="0.78" stop-color="#58d9c7" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#58d9c7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eac390" stop-opacity="0.12"/>
+      <stop offset="0.42" stop-color="#eac390" stop-opacity="0.8"/>
+      <stop offset="0.72" stop-color="#83dacb" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#83dacb" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="wordmark" x1="0" x2="1">
+      <stop stop-color="#fffaf1"/>
+      <stop offset="1" stop-color="#cfdfd9"/>
+    </linearGradient>
+    <clipPath id="disc"><circle cx="904" cy="205" r="116"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="440" rx="12" fill="url(#space)"/>
+  <path d="M0 0h1200v440H0z" fill="none" stroke="#a9c6bb" stroke-opacity="0.16" stroke-width="2"/>
+
+  <g fill="#d9f3ed" opacity="0.65">
+    <circle cx="76" cy="76" r="1.3"/><circle cx="131" cy="305" r="1"/>
+    <circle cx="327" cy="51" r="1"/><circle cx="512" cy="88" r="1.2"/>
+    <circle cx="683" cy="73" r="1"/><circle cx="751" cy="319" r="1"/>
+    <circle cx="806" cy="41" r="1.5"/><circle cx="995" cy="52" r="1"/>
+    <circle cx="1085" cy="114" r="1.2"/><circle cx="1145" cy="275" r="1"/>
+    <circle cx="1034" cy="371" r="1.2"/><circle cx="621" cy="363" r="1"/>
+  </g>
+  <g stroke="#a4ddd1" stroke-opacity="0.13" fill="none">
+    <path d="M668 0v440M0 345h1200"/>
+    <path d="M700 75h36m-18-18v36M1114 348h24m-12-12v24"/>
+    <path d="M665 402c185-55 348-57 535-29"/>
+  </g>
+
+  <path d="M54 70h36" stroke="#e6b980" stroke-width="3"/>
+  <text x="54" y="105" fill="#9bc5bb" font-family="Arial, sans-serif" font-size="15">A V O R A  /  V I E T N A M</text>
+  <text x="50" y="205" fill="url(#wordmark)" font-family="Georgia, serif" font-size="78" font-weight="bold">AVORA</text>
+  <text x="56" y="259" fill="#e6b980" font-family="Arial, sans-serif" font-size="31">LABS</text>
+  <path d="M54 292h482" stroke="#a4ddd1" stroke-opacity="0.28"/>
+  <text x="54" y="327" fill="#edf6f0" font-family="Arial, sans-serif" font-size="23">Clarity for what comes next.</text>
+  <text x="54" y="391" fill="#a7c1bd" font-family="Arial, sans-serif" font-size="14">SOFTWARE  /  DATA  /  MANAGEMENT</text>
+
+  <ellipse cx="907" cy="373" rx="240" ry="33" fill="#75c7b2" opacity="0.08"/>
+  <ellipse cx="904" cy="216" rx="265" ry="83" transform="rotate(-21 904 216)" fill="none" stroke="#62cdbd" stroke-opacity="0.16" stroke-width="2"/>
+  <ellipse cx="904" cy="216" rx="228" ry="66" transform="rotate(-21 904 216)" fill="none" stroke="#f0b577" stroke-opacity="0.22"/>
+  <circle cx="904" cy="205" r="155" fill="url(#atmosphere)"/>
+  <path d="M667 295c110-48 175-97 266-116 105-22 195-18 260 2" fill="none" stroke="url(#ring)" stroke-width="11" stroke-linecap="round"/>
+  <path d="M667 295c110-48 175-97 266-116 105-22 195-18 260 2" fill="none" stroke="#fff0cc" stroke-opacity="0.46" stroke-width="1"/>
+  <circle cx="904" cy="205" r="116" fill="url(#planet)"/>
+  <g clip-path="url(#disc)" fill="none">
+    <path d="M776 195c77-58 190-62 266-28M787 248c89-41 165-47 238-30M797 281c91-30 160-24 216-11" stroke="#b5f0df" stroke-opacity="0.23" stroke-width="2"/>
+    <path d="M839 89c-42 79-30 181 17 249M903 86c-43 90-27 190 20 245M974 97c-31 96-17 164 21 224" stroke="#d4f8e9" stroke-opacity="0.13" stroke-width="1.4"/>
+    <path d="M772 194c84-43 179-33 260-2" stroke="#e8ba89" stroke-opacity="0.35" stroke-width="8"/>
+  </g>
+  <circle cx="904" cy="205" r="116" fill="none" stroke="#c4f4d8" stroke-opacity="0.48" stroke-width="2"/>
+  <path d="M646 318c92-12 175-1 282-31 82-23 156-64 266-108" fill="none" stroke="url(#ring)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M646 318c92-12 175-1 282-31 82-23 156-64 266-108" fill="none" stroke="#fff0cc" stroke-opacity="0.55" stroke-width="1"/>
+  <g fill="#f4c792">
+    <circle cx="698" cy="309" r="4"/><circle cx="1072" cy="232" r="3"/>
+  </g>
+  <circle cx="1092" cy="316" r="18" fill="#d78275"/>
+  <circle cx="1087" cy="310" r="6" fill="#ffd5b3" opacity="0.6"/>
+  <path d="M686 350h416" stroke="url(#horizon)" stroke-width="2"/>
+</svg>

@@ -1,43 +1,39 @@
 <div align="center">
-  <img src="https://github.com/AVORA-Labs.png?size=200" alt="AVORA Labs" width="104" />
+  <img src="./assets/avora-galaxy.svg" alt="AVORA Labs: Clarity for what comes next. Software, data and management." width="1200" />
 
-# AVORA Labs
-
-**Technology for clearer business decisions.**
-
-Phần mềm, dữ liệu và giải pháp quản lý cho doanh nghiệp.
-
+  <p><strong>Công nghệ giúp doanh nghiệp nhìn rõ hơn và tiến xa hơn.</strong><br />
+  Technology that helps businesses see clearly and move forward.</p>
 </div>
 
 ---
 
 ### Xin chào · Hello
 
-**AVORA Labs** phát triển các giải pháp công nghệ giúp doanh nghiệp kết nối thông tin, tổ chức công việc và vận hành rõ ràng hơn. Chúng tôi bắt đầu từ những vấn đề thực tế, rồi dùng phần mềm và dữ liệu để biến các quy trình phức tạp thành trải nghiệm dễ hiểu, dễ sử dụng.
+Chúng tôi là **AVORA Labs**, một đội ngũ tại Việt Nam tập trung vào giải pháp phần mềm, dữ liệu và quản lý cho doanh nghiệp. Chúng tôi tin rằng công nghệ tốt bắt đầu bằng việc hiểu cách con người làm việc, rồi giúp công việc ấy trở nên đơn giản, kết nối và có định hướng hơn.
 
-**AVORA Labs** builds technology solutions that help businesses connect information, organize work, and operate with greater clarity. We start with real-world challenges, then use software and data to make complex processes easier to understand and use.
+We are **AVORA Labs**, a team in Vietnam focused on software, data, and management solutions for businesses. We believe good technology starts with understanding how people work, then making that work simpler, more connected, and more purposeful.
 
-### Chúng tôi tập trung vào · What we focus on
+### Nơi chúng tôi tạo giá trị · Where we create value
 
-|                          | Tiếng Việt                                                          | English                                                          |
-| ------------------------ | ------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Phần mềm · Software**  | Xây dựng công cụ phù hợp với cách doanh nghiệp thực sự làm việc.    | Building tools around the way businesses actually work.          |
-| **Dữ liệu · Data**       | Kết nối thông tin để hỗ trợ góc nhìn rõ ràng và quyết định tốt hơn. | Connecting information for clearer insight and better decisions. |
-| **Quản lý · Management** | Giúp con người, quy trình và hoạt động phối hợp hiệu quả.           | Helping people, processes, and operations work together.         |
+|                     | Tiếng Việt                                                | English                                                       |
+| ------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| **01 / Software**   | Công cụ được thiết kế quanh nhu cầu và quy trình thực tế. | Tools designed around real needs and workflows.               |
+| **02 / Data**       | Thông tin được kết nối để nhìn rõ và quyết định tốt hơn.  | Connected information for clearer, better-informed decisions. |
+| **03 / Management** | Hệ thống giúp con người và hoạt động phối hợp nhịp nhàng. | Systems that help people and operations work together.        |
 
-### Cách chúng tôi làm việc · How we work
+### Cách chúng tôi nghĩ · How we think
 
-**Hiểu vấn đề. Thiết kế có chủ đích. Xây dựng để phát triển lâu dài.**
+**Hiểu vấn đề trước. Thiết kế có chủ đích. Xây dựng để thích nghi.**
 
-Chúng tôi tin giải pháp tốt cần vừa giải quyết được nhu cầu hôm nay, vừa đủ linh hoạt để thích nghi khi doanh nghiệp thay đổi.
+Một giải pháp hiệu quả không chỉ giải quyết việc hôm nay. Nó cần đủ rõ ràng để mọi người cùng sử dụng, và đủ linh hoạt để đồng hành khi doanh nghiệp phát triển.
 
-**Understand the problem. Design with intent. Build for the long term.**
+**Understand first. Design with intent. Build to adapt.**
 
-We believe useful technology should meet today's needs while remaining adaptable as a business grows and changes.
+An effective solution does more than solve today's problem. It should be clear enough for people to use together and flexible enough to grow with a business.
 
 ---
 
 <div align="center">
   <strong>AVORA Labs</strong><br />
-  Building clarity into the way businesses work.
+  Clarity for what comes next.
 </div>
