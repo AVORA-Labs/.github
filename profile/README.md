@@ -15,11 +15,17 @@ We are **AVORA Labs**, a team in Vietnam focused on software, data, and manageme
 
 ### Nơi chúng tôi tạo giá trị · Where we create value
 
-|                     | Tiếng Việt                                                | English                                                       |
-| ------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
-| **01 / Software**   | Công cụ được thiết kế quanh nhu cầu và quy trình thực tế. | Tools designed around real needs and workflows.               |
-| **02 / Data**       | Thông tin được kết nối để nhìn rõ và quyết định tốt hơn.  | Connected information for clearer, better-informed decisions. |
-| **03 / Management** | Hệ thống giúp con người và hoạt động phối hợp nhịp nhàng. | Systems that help people and operations work together.        |
+**01 / Phần mềm · Software**<br />
+Công cụ được thiết kế quanh nhu cầu và quy trình thực tế.<br />
+Tools designed around real needs and workflows.
+
+**02 / Dữ liệu · Data**<br />
+Thông tin được kết nối để nhìn rõ và quyết định tốt hơn.<br />
+Connected information for clearer, better-informed decisions.
+
+**03 / Quản lý · Management**<br />
+Hệ thống giúp con người và hoạt động phối hợp nhịp nhàng.<br />
+Systems that help people and operations work together.
 
 ### Cách chúng tôi nghĩ · How we think
 
