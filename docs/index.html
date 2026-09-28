@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10191d" />
+    <meta
+      name="description"
+      content="AVORA Labs develops software, data, and management solutions for businesses."
+    />
+    <title>AVORA Labs — Rõ hướng đi. Rộng tầm nhìn.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17272b;
+        --muted: #587078;
+        --paper: #f5f7f4;
+        --teal: #087d77;
+        --line: #cdd9d5;
+        --copper: #be9b6d;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.55;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        font: inherit;
+      }
+      :focus-visible {
+        outline: 2px solid #39cdb5;
+        outline-offset: 4px;
+      }
+      .wrap {
+        width: min(100% - 48px, 1160px);
+        margin-inline: auto;
+      }
+      .hero {
+        position: relative;
+        min-height: clamp(570px, 78svh, 780px);
+        isolation: isolate;
+        overflow: hidden;
+        background: #10191d;
+        color: #f4f8f6;
+        display: flex;
+        flex-direction: column;
+      }
+      .hero-photo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 44%;
+        z-index: -2;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(6, 19, 23, 0.93) 0%,
+            rgba(6, 19, 23, 0.79) 37%,
+            rgba(6, 19, 23, 0.26) 100%
+          ),
+          linear-gradient(0deg, rgba(6, 19, 23, 0.67), transparent 42%);
+        z-index: -1;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.22;
+        pointer-events: none;
+        background-image: linear-gradient(
+          90deg,
+          transparent calc(50% - 0.5px),
+          #b0c9bf 50%,
+          transparent calc(50% + 0.5px)
+        );
+      }
+      .masthead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        min-height: 98px;
+        border-bottom: 1px solid #ffffff40;
+      }
+      .wordmark {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 9px;
+        font-family: Outfit, sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+        letter-spacing: 0;
+        white-space: nowrap;
+      }
+      .wordmark span {
+        color: #c8ad86;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: clamp(18px, 3vw, 44px);
+      }
+      .nav-link {
+        font-size: 13px;
+        font-weight: 600;
+        color: #e0ece8;
+      }
+      .nav-link:hover,
+      .footer a:hover {
+        color: #76e3cf;
+      }
+      .locale {
+        display: inline-flex;
+        border: 1px solid #a9c6bc88;
+        padding: 3px;
+        border-radius: 4px;
+        gap: 2px;
+      }
+      .locale button {
+        border: 0;
+        border-radius: 2px;
+        color: #f4f8f6;
+        background: transparent;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 700;
+        min-width: 38px;
+      }
+      .locale button[aria-pressed="true"] {
+        background: #eff8f4;
+        color: #193c3c;
+      }
+      .hero-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 76px 80px;
+        max-width: 1160px;
+      }
+      .eyebrow {
+        color: #b8d4cb;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .hero h1 {
+        font-family: Outfit, sans-serif;
+        font-weight: 600;
+        font-size: clamp(56px, 9vw, 124px);
+        line-height: 0.95;
+        margin: 22px 0 25px;
+      }
+      .hero .lead {
+        font-size: clamp(23px, 3.4vw, 41px);
+        line-height: 1.22;
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        max-width: 740px;
+        margin: 0;
+        text-wrap: balance;
+      }
+      .hero .sublead {
+        font-size: 16px;
+        color: #c4d6d3;
+        max-width: 515px;
+        margin: 24px 0 36px;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 10px 20px;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 13px;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+      .action:hover {
+        transform: translateY(-2px);
+      }
+      .action.primary {
+        background: #bbdfce;
+        color: #133531;
+      }
+      .action.secondary {
+        color: #f2f7f4;
+        border: 1px solid #a9c6bc99;
+      }
+      .hero-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 18px 0;
+        border-top: 1px solid #ffffff40;
+        font-size: 11px;
+        font-weight: 700;
+        color: #b9d3cc;
+      }
+      .section {
+        padding-block: clamp(76px, 10vw, 130px);
+      }
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(160px, 1fr) minmax(0, 2.15fr);
+        gap: 40px;
+      }
+      .section-number {
+        color: var(--teal);
+        font-size: 12px;
+        font-weight: 700;
+      }
+      h2 {
+        margin: 0;
+        font:
+          500 clamp(30px, 4vw, 52px)/1.12 Outfit,
+          sans-serif;
+        text-wrap: balance;
+      }
+      .about-copy {
+        max-width: 690px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: clamp(16px, 1.8vw, 19px);
+      }
+      .services {
+        padding-top: 0;
+      }
+      .service-list {
+        margin-top: 50px;
+        border-top: 1px solid var(--line);
+      }
+      .service {
+        display: grid;
+        grid-template-columns: minmax(160px, 1fr) minmax(200px, 1.15fr) minmax(
+            0,
+            1fr
+          );
+        align-items: center;
+        gap: 34px;
+        padding: 26px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .service-num {
+        font:
+          500 13px Outfit,
+          sans-serif;
+        color: var(--teal);
+      }
+      .service h3 {
+        font:
+          500 clamp(22px, 3vw, 32px)/1.2 Outfit,
+          sans-serif;
+        margin: 0;
+      }
+      .service p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 410px;
+      }
+      .statement {
+        background: #163235;
+        color: #f2f8f3;
+      }
+      .statement .section-number {
+        color: #a3e1ca;
+      }
+      .statement h2 {
+        max-width: 900px;
+        font-size: clamp(32px, 5vw, 60px);
+      }
+      .statement p {
+        max-width: 610px;
+        color: #b7ceca;
+        font-size: 18px;
+        margin: 26px 0 0;
+      }
+      .footer {
+        background: #0f1b20;
+        color: #eaf3ef;
+        padding: 45px 0;
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 24px;
+      }
+      .footer p {
+        color: #9ab5ad;
+        margin: 12px 0 0;
+        font-size: 13px;
+      }
+      .footer a {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      @media (max-width: 700px) {
+        .wrap {
+          width: min(100% - 36px, 1160px);
+        }
+        .masthead {
+          min-height: 76px;
+        }
+        .nav-link {
+          display: none;
+        }
+        .hero {
+          min-height: 650px;
+        }
+        .hero-photo {
+          object-position: 62% center;
+        }
+        .hero::before {
+          background:
+            linear-gradient(
+              90deg,
+              rgba(6, 19, 23, 0.86),
+              rgba(6, 19, 23, 0.38)
+            ),
+            linear-gradient(0deg, rgba(6, 19, 23, 0.83), transparent 80%);
+        }
+        .hero-content {
+          padding-block: 75px;
+        }
+        .hero .sublead {
+          font-size: 15px;
+        }
+        .section-head {
+          display: block;
+        }
+        .section-head h2 {
+          margin-top: 20px;
+        }
+        .service-list {
+          margin-top: 32px;
+        }
+        .service {
+          grid-template-columns: 48px 1fr;
+          gap: 10px 18px;
+          padding: 23px 0;
+        }
+        .service p {
+          grid-column: 2;
+        }
+        .footer-inner {
+          align-items: start;
+          flex-direction: column;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .action {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <img
+        class="hero-photo"
+        src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2000&amp;q=85"
+        alt=""
+        onerror="
+          this.onerror = null;
+          this.src = '../profile/assets/avora-galaxy.svg';
+        "
+      />
+      <div class="wrap masthead">
+        <a class="wordmark" href="#top" aria-label="AVORA Labs home"
+          >AVORA <span>LABS</span></a
+        >
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="#about" data-i18n="navAbout"
+            >Về chúng tôi</a
+          >
+          <a class="nav-link" href="#focus" data-i18n="navFocus">Lĩnh vực</a>
+          <div class="locale" role="group" aria-label="Language / Ngôn ngữ">
+            <button
+              type="button"
+              data-lang="vi"
+              aria-pressed="true"
+              aria-label="Tiếng Việt"
+            >
+              VI
+            </button>
+            <button
+              type="button"
+              data-lang="en"
+              aria-pressed="false"
+              aria-label="English"
+            >
+              EN
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="wrap hero-content">
+        <span class="eyebrow" data-i18n="eyebrow"
+          >Giải pháp công nghệ · Việt Nam</span
+        >
+        <h1>AVORA Labs</h1>
+        <p class="lead" data-i18n="heroTitle">Rõ hướng đi. Rộng tầm nhìn.</p>
+        <p class="sublead" data-i18n="heroBody">
+          Phần mềm, dữ liệu và giải pháp quản lý giúp doanh nghiệp làm việc kết
+          nối và quyết định tự tin hơn.
+        </p>
+        <div class="actions">
+          <a class="action primary" href="#about" data-i18n="explore"
+            >Khám phá AVORA</a
+          >
+          <a
+            class="action secondary"
+            href="https://github.com/AVORA-Labs"
+            data-i18n="github"
+            >GitHub của chúng tôi</a
+          >
+        </div>
+      </div>
+      <div class="wrap hero-footer">
+        <span>01 / AVORA LABS</span
+        ><span data-i18n="heroFooter">PHẦN MỀM · DỮ LIỆU · QUẢN LÝ</span>
+      </div>
+    </header>
+    <main>
+      <section class="section wrap" id="about" aria-labelledby="about-title">
+        <div class="section-head">
+          <span class="section-number" data-i18n="aboutLabel"
+            >01 / VỀ CHÚNG TÔI</span
+          >
+          <div>
+            <h2 id="about-title" data-i18n="aboutTitle">
+              Công nghệ bắt đầu từ cách con người làm việc.
+            </h2>
+            <p class="about-copy" data-i18n="aboutBody">
+              AVORA Labs tập trung xây dựng các giải pháp giúp doanh nghiệp tổ
+              chức công việc, kết nối thông tin và vận hành rõ ràng hơn. Chúng
+              tôi bắt đầu bằng việc hiểu vấn đề thực tế, rồi thiết kế công nghệ
+              để giải quyết nó.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section services wrap"
+        id="focus"
+        aria-labelledby="focus-title"
+      >
+        <div class="section-head">
+          <span class="section-number" data-i18n="focusLabel"
+            >02 / LĨNH VỰC</span
+          >
+          <h2 id="focus-title" data-i18n="focusTitle">
+            Ba góc nhìn. Một hệ thống rõ ràng.
+          </h2>
+        </div>
+        <div class="service-list">
+          <div class="service">
+            <span class="service-num">01</span>
+            <h3 data-i18n="software">Phần mềm</h3>
+            <p data-i18n="softwareBody">
+              Công cụ được thiết kế quanh nhu cầu và quy trình thực tế.
+            </p>
+          </div>
+          <div class="service">
+            <span class="service-num">02</span>
+            <h3 data-i18n="data">Dữ liệu</h3>
+            <p data-i18n="dataBody">
+              Kết nối thông tin để nhìn rõ và quyết định tốt hơn.
+            </p>
+          </div>
+          <div class="service">
+            <span class="service-num">03</span>
+            <h3 data-i18n="management">Quản lý</h3>
+            <p data-i18n="managementBody">
+              Hệ thống giúp con người và hoạt động phối hợp nhịp nhàng.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section statement" aria-labelledby="statement-title">
+        <div class="wrap">
+          <span class="section-number" data-i18n="approachLabel"
+            >03 / CÁCH TIẾP CẬN</span
+          >
+          <h2 id="statement-title" data-i18n="statementTitle">
+            Hiểu vấn đề trước. Thiết kế có chủ đích. Xây dựng để thích nghi.
+          </h2>
+          <p data-i18n="statementBody">
+            Giải pháp tốt không chỉ giải quyết việc hôm nay. Nó cần dễ sử dụng
+            cùng nhau và đủ linh hoạt để đồng hành khi doanh nghiệp thay đổi.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <span class="wordmark">AVORA <span>LABS</span></span>
+          <p data-i18n="footer">Clarity for what comes next.</p>
+        </div>
+        <a href="https://github.com/AVORA-Labs">GitHub ↗</a>
+      </div>
+    </footer>
+    <script>
+      const translations = {
+        vi: {
+          pageTitle: "AVORA Labs — Rõ hướng đi. Rộng tầm nhìn.",
+          aboutLabel: "01 / VỀ CHÚNG TÔI",
+          focusLabel: "02 / LĨNH VỰC",
+          approachLabel: "03 / CÁCH TIẾP CẬN",
+          heroFooter: "PHẦN MỀM · DỮ LIỆU · QUẢN LÝ",
+          navAbout: "Về chúng tôi",
+          navFocus: "Lĩnh vực",
+          eyebrow: "Giải pháp công nghệ · Việt Nam",
+          heroTitle: "Rõ hướng đi. Rộng tầm nhìn.",
+          heroBody:
+            "Phần mềm, dữ liệu và giải pháp quản lý giúp doanh nghiệp làm việc kết nối và quyết định tự tin hơn.",
+          explore: "Khám phá AVORA",
+          github: "GitHub của chúng tôi",
+          aboutTitle: "Công nghệ bắt đầu từ cách con người làm việc.",
+          aboutBody:
+            "AVORA Labs tập trung xây dựng các giải pháp giúp doanh nghiệp tổ chức công việc, kết nối thông tin và vận hành rõ ràng hơn. Chúng tôi bắt đầu bằng việc hiểu vấn đề thực tế, rồi thiết kế công nghệ để giải quyết nó.",
+          focusTitle: "Ba góc nhìn. Một hệ thống rõ ràng.",
+          software: "Phần mềm",
+          softwareBody:
+            "Công cụ được thiết kế quanh nhu cầu và quy trình thực tế.",
+          data: "Dữ liệu",
+          dataBody: "Kết nối thông tin để nhìn rõ và quyết định tốt hơn.",
+          management: "Quản lý",
+          managementBody:
+            "Hệ thống giúp con người và hoạt động phối hợp nhịp nhàng.",
+          statementTitle:
+            "Hiểu vấn đề trước. Thiết kế có chủ đích. Xây dựng để thích nghi.",
+          statementBody:
+            "Giải pháp tốt không chỉ giải quyết việc hôm nay. Nó cần dễ sử dụng cùng nhau và đủ linh hoạt để đồng hành khi doanh nghiệp thay đổi.",
+          footer: "Rõ ràng cho chặng đường tiếp theo.",
+        },
+        en: {
+          pageTitle: "AVORA Labs — Clarity for what comes next.",
+          aboutLabel: "01 / ABOUT",
+          focusLabel: "02 / FOCUS",
+          approachLabel: "03 / APPROACH",
+          heroFooter: "SOFTWARE · DATA · MANAGEMENT",
+          navAbout: "About",
+          navFocus: "What we do",
+          eyebrow: "Technology solutions · Vietnam",
+          heroTitle: "Clarity for what comes next.",
+          heroBody:
+            "Software, data, and management solutions that help businesses work together and make decisions with confidence.",
+          explore: "Explore AVORA",
+          github: "Our GitHub",
+          aboutTitle: "Technology starts with how people work.",
+          aboutBody:
+            "AVORA Labs builds solutions that help businesses organize work, connect information, and operate with greater clarity. We start by understanding real challenges, then design technology to address them.",
+          focusTitle: "Three perspectives. One clearer picture.",
+          software: "Software",
+          softwareBody: "Tools designed around real needs and workflows.",
+          data: "Data",
+          dataBody:
+            "Connected information for clearer, better-informed decisions.",
+          management: "Management",
+          managementBody:
+            "Systems that help people and operations work together.",
+          statementTitle:
+            "Understand first. Design with intent. Build to adapt.",
+          statementBody:
+            "Good solutions do more than solve today's problems. They should be easy to use together and flexible enough to grow with a business.",
+          footer: "Clarity for what comes next.",
+        },
+      };
+      function setLanguage(language) {
+        if (!translations[language]) return;
+        document.documentElement.lang = language;
+        document.title = translations[language].pageTitle;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          element.textContent = translations[language][element.dataset.i18n];
+        });
+        document.querySelectorAll("[data-lang]").forEach((button) => {
+          button.setAttribute(
+            "aria-pressed",
+            String(button.dataset.lang === language),
+          );
+        });
+        try {
+          localStorage.setItem("avora-language", language);
+        } catch (_) {
+          /* Storage may be unavailable. */
+        }
+      }
+      document
+        .querySelectorAll("[data-lang]")
+        .forEach((button) =>
+          button.addEventListener("click", () =>
+            setLanguage(button.dataset.lang),
+          ),
+        );
+      let savedLanguage;
+      try {
+        savedLanguage = localStorage.getItem("avora-language");
+      } catch (_) {
+        /* Storage may be unavailable. */
+      }
+      setLanguage(savedLanguage === "en" ? "en" : "vi");
+    </script>
+  </body>
+</html>

@@ -1,45 +1,48 @@
 <div align="center">
-  <img src="./assets/avora-galaxy.svg" alt="AVORA Labs: Clarity for what comes next. Software, data and management." width="1200" />
 
-  <p><strong>Công nghệ giúp doanh nghiệp nhìn rõ hơn và tiến xa hơn.</strong><br />
-  Technology that helps businesses see clearly and move forward.</p>
+# AVORA Labs
+
+**Clarity for what comes next.**
+
+Software &nbsp; / &nbsp; Data &nbsp; / &nbsp; Management
+
+[**VI · Tiếng Việt**](#tieng-viet) &nbsp; | &nbsp; [**EN · English**](#english)
+
+<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1400&amp;q=85" alt="A luminous galaxy in deep space" width="100%" />
+
 </div>
 
----
+<a id="tieng-viet"></a>
 
-### Xin chào · Hello
+## Tạo ra sự rõ ràng cho doanh nghiệp.
 
-Chúng tôi là **AVORA Labs**, một đội ngũ tại Việt Nam tập trung vào giải pháp phần mềm, dữ liệu và quản lý cho doanh nghiệp. Chúng tôi tin rằng công nghệ tốt bắt đầu bằng việc hiểu cách con người làm việc, rồi giúp công việc ấy trở nên đơn giản, kết nối và có định hướng hơn.
+Chúng tôi là **AVORA Labs**, một đội ngũ tại Việt Nam tập trung xây dựng giải pháp phần mềm, dữ liệu và quản lý. Công nghệ tốt bắt đầu từ việc hiểu con người và cách họ làm việc: kết nối thông tin, gỡ bỏ sự phức tạp và giúp mỗi quyết định có cơ sở hơn.
 
-We are **AVORA Labs**, a team in Vietnam focused on software, data, and management solutions for businesses. We believe good technology starts with understanding how people work, then making that work simpler, more connected, and more purposeful.
+**01 / Phần mềm** · Công cụ được thiết kế quanh nhu cầu và quy trình thực tế.
 
-### Nơi chúng tôi tạo giá trị · Where we create value
+**02 / Dữ liệu** · Kết nối thông tin để nhìn rõ và quyết định tốt hơn.
 
-**01 / Phần mềm · Software**<br />
-Công cụ được thiết kế quanh nhu cầu và quy trình thực tế.<br />
-Tools designed around real needs and workflows.
+**03 / Quản lý** · Hệ thống giúp con người và hoạt động phối hợp nhịp nhàng.
 
-**02 / Dữ liệu · Data**<br />
-Thông tin được kết nối để nhìn rõ và quyết định tốt hơn.<br />
-Connected information for clearer, better-informed decisions.
+> Hiểu vấn đề trước. Thiết kế có chủ đích. Xây dựng để thích nghi.
 
-**03 / Quản lý · Management**<br />
-Hệ thống giúp con người và hoạt động phối hợp nhịp nhàng.<br />
-Systems that help people and operations work together.
+<a id="english"></a>
 
-### Cách chúng tôi nghĩ · How we think
+## Technology that brings clarity to business.
 
-**Hiểu vấn đề trước. Thiết kế có chủ đích. Xây dựng để thích nghi.**
+We are **AVORA Labs**, a team in Vietnam focused on software, data, and management solutions. Good technology starts with understanding people and how they work: connecting information, reducing complexity, and helping businesses make better-informed decisions.
 
-Một giải pháp hiệu quả không chỉ giải quyết việc hôm nay. Nó cần đủ rõ ràng để mọi người cùng sử dụng, và đủ linh hoạt để đồng hành khi doanh nghiệp phát triển.
+**01 / Software** · Tools designed around real needs and workflows.
 
-**Understand first. Design with intent. Build to adapt.**
+**02 / Data** · Connected information for clearer, better-informed decisions.
 
-An effective solution does more than solve today's problem. It should be clear enough for people to use together and flexible enough to grow with a business.
+**03 / Management** · Systems that help people and operations work together.
+
+> Understand first. Design with intent. Build to adapt.
 
 ---
 
 <div align="center">
-  <strong>AVORA Labs</strong><br />
-  Clarity for what comes next.
+  <strong>AVORA Labs · Vietnam</strong><br />
+  <a href="https://github.com/AVORA-Labs">GitHub ↗</a>
 </div>
