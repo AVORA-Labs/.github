@@ -58,32 +58,23 @@
         min-height: clamp(570px, 78svh, 780px);
         isolation: isolate;
         overflow: hidden;
-        background: #10191d;
+        background: #071719;
         color: #f4f8f6;
         display: flex;
         flex-direction: column;
       }
-      .hero-photo {
+      .brand-field {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: center 44%;
         z-index: -2;
       }
       .hero::before {
         content: "";
         position: absolute;
         inset: 0;
-        background:
-          linear-gradient(
-            90deg,
-            rgba(6, 19, 23, 0.93) 0%,
-            rgba(6, 19, 23, 0.79) 37%,
-            rgba(6, 19, 23, 0.26) 100%
-          ),
-          linear-gradient(0deg, rgba(6, 19, 23, 0.67), transparent 42%);
+        background: rgba(4, 17, 19, 0.2);
         z-index: -1;
       }
       .hero::after {
@@ -164,7 +155,98 @@
         flex-direction: column;
         justify-content: center;
         padding-block: 76px 80px;
-        max-width: 1160px;
+        max-width: 680px;
+        margin-left: max(24px, calc((100vw - 1160px) / 2));
+        margin-right: auto;
+      }
+      .brand-orbit {
+        position: absolute;
+        right: max(3vw, calc((100vw - 1160px) / 2));
+        top: 50%;
+        width: min(42vw, 510px);
+        aspect-ratio: 1;
+        translate: 0 -46%;
+        pointer-events: none;
+      }
+      .orbit-ring {
+        position: absolute;
+        inset: 11%;
+        border: 1px solid #8fc8bb55;
+        border-radius: 50%;
+      }
+      .orbit-ring::before,
+      .orbit-ring::after {
+        content: "";
+        position: absolute;
+        inset: 14%;
+        border: 1px solid #d6b17b4f;
+        border-radius: 50%;
+        transform: rotate(62deg) scaleY(0.43);
+      }
+      .orbit-ring::after {
+        inset: -8%;
+        border-color: #76d8c336;
+        transform: rotate(-24deg) scaleY(0.56);
+      }
+      .orbit-core {
+        position: absolute;
+        inset: 35%;
+        display: grid;
+        place-items: center;
+        border: 1px solid #e1c28a88;
+        border-radius: 50%;
+        background: #0d2b2d;
+        box-shadow: 0 0 70px #49c6af38;
+        font:
+          600 clamp(18px, 2vw, 26px) Outfit,
+          sans-serif;
+      }
+      .orbit-node {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        width: 39px;
+        aspect-ratio: 1;
+        border: 1px solid #bfddd399;
+        border-radius: 50%;
+        background: #0b2426;
+        color: #f1d39f;
+        font:
+          700 12px Outfit,
+          sans-serif;
+        box-shadow: 0 0 24px #48cbb32e;
+      }
+      .orbit-node::after {
+        content: attr(data-word);
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 7px);
+        translate: -50% 0;
+        color: #b9d0cb;
+        font:
+          600 9px "DM Sans",
+          sans-serif;
+        white-space: nowrap;
+      }
+      .node-a {
+        left: 47%;
+        top: 0;
+      }
+      .node-v {
+        right: 4%;
+        top: 31%;
+      }
+      .node-o {
+        right: 17%;
+        bottom: 7%;
+      }
+      .node-r {
+        left: 16%;
+        bottom: 7%;
+      }
+      .node-last {
+        left: 3%;
+        top: 31%;
       }
       .eyebrow {
         color: #b8d4cb;
@@ -175,7 +257,7 @@
       .hero h1 {
         font-family: Outfit, sans-serif;
         font-weight: 600;
-        font-size: clamp(56px, 9vw, 124px);
+        font-size: clamp(56px, 6.3vw, 90px);
         line-height: 0.95;
         margin: 22px 0 25px;
       }
@@ -262,6 +344,42 @@
       .services {
         padding-top: 0;
       }
+      .meaning {
+        background: #e7eeea;
+        border-block: 1px solid var(--line);
+      }
+      .meaning-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 55px;
+        border-top: 1px solid #aebfba;
+      }
+      .meaning-item {
+        min-width: 0;
+        padding: 24px 16px 28px 0;
+        border-right: 1px solid #aebfba;
+      }
+      .meaning-item:last-child {
+        border-right: 0;
+        padding-right: 0;
+      }
+      .meaning-letter {
+        display: block;
+        color: var(--teal);
+        font:
+          600 46px/1 Outfit,
+          sans-serif;
+        margin-bottom: 14px;
+      }
+      .meaning-item strong {
+        display: block;
+        font-family: Outfit, sans-serif;
+      }
+      .meaning-item small {
+        display: block;
+        color: var(--muted);
+        margin-top: 7px;
+      }
       .service-list {
         margin-top: 50px;
         border-top: 1px solid var(--line);
@@ -344,23 +462,22 @@
         .hero {
           min-height: 650px;
         }
-        .hero-photo {
-          object-position: 62% center;
-        }
         .hero::before {
-          background:
-            linear-gradient(
-              90deg,
-              rgba(6, 19, 23, 0.86),
-              rgba(6, 19, 23, 0.38)
-            ),
-            linear-gradient(0deg, rgba(6, 19, 23, 0.83), transparent 80%);
+          background: rgba(4, 17, 19, 0.34);
         }
         .hero-content {
           padding-block: 75px;
+          max-width: none;
+          margin-inline: 18px;
         }
         .hero .sublead {
           font-size: 15px;
+        }
+        .brand-orbit {
+          width: 340px;
+          right: -120px;
+          top: 58%;
+          opacity: 0.42;
         }
         .section-head {
           display: block;
@@ -379,6 +496,27 @@
         .service p {
           grid-column: 2;
         }
+        .meaning-grid {
+          grid-template-columns: 1fr;
+          margin-top: 34px;
+        }
+        .meaning-item,
+        .meaning-item:last-child {
+          display: grid;
+          grid-template-columns: 48px 1fr;
+          gap: 0 16px;
+          padding: 17px 0;
+          border-right: 0;
+          border-bottom: 1px solid #aebfba;
+        }
+        .meaning-item:last-child {
+          border-bottom: 0;
+        }
+        .meaning-letter {
+          grid-row: 1 / 3;
+          margin: 0;
+          font-size: 34px;
+        }
         .footer-inner {
           align-items: start;
           flex-direction: column;
@@ -396,15 +534,16 @@
   </head>
   <body>
     <header class="hero" id="top">
-      <img
-        class="hero-photo"
-        src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2000&amp;q=85"
-        alt=""
-        onerror="
-          this.onerror = null;
-          this.src = '../profile/assets/avora-galaxy.svg';
-        "
-      />
+      <canvas class="brand-field" aria-hidden="true"></canvas>
+      <div class="brand-orbit" aria-hidden="true">
+        <div class="orbit-ring"></div>
+        <div class="orbit-core">AVORA</div>
+        <span class="orbit-node node-a" data-word="ADVANCE">A</span>
+        <span class="orbit-node node-v" data-word="VISION">V</span>
+        <span class="orbit-node node-o" data-word="OPERATIONS">O</span>
+        <span class="orbit-node node-r" data-word="RESULTS">R</span>
+        <span class="orbit-node node-last" data-word="ADAPT">A</span>
+      </div>
       <div class="wrap masthead">
         <a class="wordmark" href="#top" aria-label="AVORA Labs home"
           >AVORA <span>LABS</span></a
@@ -481,13 +620,58 @@
         </div>
       </section>
       <section
+        class="section meaning"
+        id="meaning"
+        aria-labelledby="meaning-title"
+      >
+        <div class="wrap">
+          <div class="section-head">
+            <span class="section-number" data-i18n="meaningLabel"
+              >02 / TÊN GỌI</span
+            >
+            <div>
+              <h2 id="meaning-title" data-i18n="meaningTitle">
+                AVORA là một hướng chuyển động.
+              </h2>
+              <p class="about-copy" data-i18n="meaningBody">
+                Tên gọi gợi về ánh bình minh, tầm nhìn và sự tiến về phía trước.
+                Với chúng tôi, đó cũng là năm năng lực tạo nên một hệ thống
+                doanh nghiệp bền vững.
+              </p>
+            </div>
+          </div>
+          <div class="meaning-grid">
+            <div class="meaning-item">
+              <span class="meaning-letter">A</span><strong>Advance</strong
+              ><small data-i18n="advance">Tiến về phía trước</small>
+            </div>
+            <div class="meaning-item">
+              <span class="meaning-letter">V</span><strong>Vision</strong
+              ><small data-i18n="vision">Nhìn rõ hướng đi</small>
+            </div>
+            <div class="meaning-item">
+              <span class="meaning-letter">O</span><strong>Operations</strong
+              ><small data-i18n="operations">Vận hành có hệ thống</small>
+            </div>
+            <div class="meaning-item">
+              <span class="meaning-letter">R</span><strong>Results</strong
+              ><small data-i18n="results">Tạo ra kết quả</small>
+            </div>
+            <div class="meaning-item">
+              <span class="meaning-letter">A</span><strong>Adapt</strong
+              ><small data-i18n="adapt">Thích nghi để phát triển</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
         class="section services wrap"
         id="focus"
         aria-labelledby="focus-title"
       >
         <div class="section-head">
           <span class="section-number" data-i18n="focusLabel"
-            >02 / LĨNH VỰC</span
+            >03 / LĨNH VỰC</span
           >
           <h2 id="focus-title" data-i18n="focusTitle">
             Ba góc nhìn. Một hệ thống rõ ràng.
@@ -520,7 +704,7 @@
       <section class="section statement" aria-labelledby="statement-title">
         <div class="wrap">
           <span class="section-number" data-i18n="approachLabel"
-            >03 / CÁCH TIẾP CẬN</span
+            >04 / CÁCH TIẾP CẬN</span
           >
           <h2 id="statement-title" data-i18n="statementTitle">
             Hiểu vấn đề trước. Thiết kế có chủ đích. Xây dựng để thích nghi.
@@ -546,8 +730,9 @@
         vi: {
           pageTitle: "AVORA Labs — Rõ hướng đi. Rộng tầm nhìn.",
           aboutLabel: "01 / VỀ CHÚNG TÔI",
-          focusLabel: "02 / LĨNH VỰC",
-          approachLabel: "03 / CÁCH TIẾP CẬN",
+          meaningLabel: "02 / TÊN GỌI",
+          focusLabel: "03 / LĨNH VỰC",
+          approachLabel: "04 / CÁCH TIẾP CẬN",
           heroFooter: "PHẦN MỀM · DỮ LIỆU · QUẢN LÝ",
           navAbout: "Về chúng tôi",
           navFocus: "Lĩnh vực",
@@ -560,6 +745,14 @@
           aboutTitle: "Công nghệ bắt đầu từ cách con người làm việc.",
           aboutBody:
             "AVORA Labs tập trung xây dựng các giải pháp giúp doanh nghiệp tổ chức công việc, kết nối thông tin và vận hành rõ ràng hơn. Chúng tôi bắt đầu bằng việc hiểu vấn đề thực tế, rồi thiết kế công nghệ để giải quyết nó.",
+          meaningTitle: "AVORA là một hướng chuyển động.",
+          meaningBody:
+            "Tên gọi gợi về ánh bình minh, tầm nhìn và sự tiến về phía trước. Với chúng tôi, đó cũng là năm năng lực tạo nên một hệ thống doanh nghiệp bền vững.",
+          advance: "Tiến về phía trước",
+          vision: "Nhìn rõ hướng đi",
+          operations: "Vận hành có hệ thống",
+          results: "Tạo ra kết quả",
+          adapt: "Thích nghi để phát triển",
           focusTitle: "Ba góc nhìn. Một hệ thống rõ ràng.",
           software: "Phần mềm",
           softwareBody:
@@ -578,8 +771,9 @@
         en: {
           pageTitle: "AVORA Labs — Clarity for what comes next.",
           aboutLabel: "01 / ABOUT",
-          focusLabel: "02 / FOCUS",
-          approachLabel: "03 / APPROACH",
+          meaningLabel: "02 / THE NAME",
+          focusLabel: "03 / FOCUS",
+          approachLabel: "04 / APPROACH",
           heroFooter: "SOFTWARE · DATA · MANAGEMENT",
           navAbout: "About",
           navFocus: "What we do",
@@ -592,6 +786,14 @@
           aboutTitle: "Technology starts with how people work.",
           aboutBody:
             "AVORA Labs builds solutions that help businesses organize work, connect information, and operate with greater clarity. We start by understanding real challenges, then design technology to address them.",
+          meaningTitle: "AVORA is a direction of movement.",
+          meaningBody:
+            "The name evokes a new dawn, clear vision, and forward motion. For us, it also represents five capabilities behind a resilient business system.",
+          advance: "Move forward",
+          vision: "See the direction clearly",
+          operations: "Operate as a system",
+          results: "Create meaningful results",
+          adapt: "Adapt to keep growing",
           focusTitle: "Three perspectives. One clearer picture.",
           software: "Software",
           softwareBody: "Tools designed around real needs and workflows.",
@@ -608,6 +810,124 @@
           footer: "Clarity for what comes next.",
         },
       };
+
+      const brandCanvas = document.querySelector(".brand-field");
+      const brandContext = brandCanvas.getContext("2d");
+      const brandHero = document.querySelector(".hero");
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      );
+      const pointer = { x: 0, y: 0 };
+      const particles = Array.from({ length: 72 }, (_, index) => ({
+        x: ((index * 47) % 101) / 100,
+        y: ((index * 29) % 97) / 100,
+        size: 0.5 + (index % 4) * 0.35,
+        phase: index * 0.61,
+      }));
+
+      function resizeBrandField() {
+        const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+        const bounds = brandHero.getBoundingClientRect();
+        brandCanvas.width = Math.round(bounds.width * pixelRatio);
+        brandCanvas.height = Math.round(bounds.height * pixelRatio);
+        brandCanvas.style.width = `${bounds.width}px`;
+        brandCanvas.style.height = `${bounds.height}px`;
+        brandContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+      }
+
+      function drawBrandField(time = 0) {
+        const width = brandCanvas.clientWidth;
+        const height = brandCanvas.clientHeight;
+        const horizonY = height * 0.67;
+        const destinationX = width * 0.76 + pointer.x * 12;
+        const destinationY = height * 0.47 + pointer.y * 8;
+
+        brandContext.clearRect(0, 0, width, height);
+        const background = brandContext.createLinearGradient(
+          0,
+          0,
+          width,
+          height,
+        );
+        background.addColorStop(0, "#061417");
+        background.addColorStop(0.55, "#0a2426");
+        background.addColorStop(1, "#12282a");
+        brandContext.fillStyle = background;
+        brandContext.fillRect(0, 0, width, height);
+
+        const dawn = brandContext.createRadialGradient(
+          destinationX,
+          destinationY,
+          0,
+          destinationX,
+          destinationY,
+          Math.max(width, height) * 0.42,
+        );
+        dawn.addColorStop(0, "rgba(229, 191, 126, 0.34)");
+        dawn.addColorStop(0.18, "rgba(79, 207, 180, 0.16)");
+        dawn.addColorStop(1, "rgba(7, 23, 25, 0)");
+        brandContext.fillStyle = dawn;
+        brandContext.fillRect(0, 0, width, height);
+
+        particles.forEach((particle) => {
+          const pulse = reducedMotion.matches
+            ? 0.65
+            : 0.5 + Math.sin(time * 0.0007 + particle.phase) * 0.22;
+          brandContext.beginPath();
+          brandContext.arc(
+            particle.x * width,
+            particle.y * height,
+            particle.size,
+            0,
+            Math.PI * 2,
+          );
+          brandContext.fillStyle = `rgba(190, 226, 215, ${pulse})`;
+          brandContext.fill();
+        });
+
+        brandContext.strokeStyle = "rgba(123, 205, 186, 0.14)";
+        brandContext.lineWidth = 1;
+        for (let lane = -5; lane <= 5; lane += 1) {
+          brandContext.beginPath();
+          brandContext.moveTo(width * 0.5 + lane * width * 0.16, height);
+          brandContext.quadraticCurveTo(
+            width * 0.58 + lane * width * 0.035,
+            horizonY,
+            destinationX,
+            destinationY,
+          );
+          brandContext.stroke();
+        }
+        for (let row = 0; row < 6; row += 1) {
+          const progress = row / 5;
+          const gridY = horizonY + (height - horizonY) * progress * progress;
+          brandContext.beginPath();
+          brandContext.moveTo(0, gridY);
+          brandContext.lineTo(width, gridY);
+          brandContext.stroke();
+        }
+
+        brandContext.beginPath();
+        brandContext.moveTo(0, horizonY);
+        brandContext.lineTo(width, horizonY);
+        brandContext.strokeStyle = "rgba(222, 188, 128, 0.45)";
+        brandContext.stroke();
+
+        if (!reducedMotion.matches) requestAnimationFrame(drawBrandField);
+      }
+
+      brandHero.addEventListener("pointermove", (event) => {
+        const bounds = brandHero.getBoundingClientRect();
+        pointer.x = event.clientX / bounds.width - 0.5;
+        pointer.y = event.clientY / bounds.height - 0.5;
+      });
+      new ResizeObserver(() => {
+        resizeBrandField();
+        if (reducedMotion.matches) drawBrandField();
+      }).observe(brandHero);
+      resizeBrandField();
+      drawBrandField();
+
       function setLanguage(language) {
         if (!translations[language]) return;
         document.documentElement.lang = language;
