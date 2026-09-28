@@ -18,12 +18,12 @@
     <style>
       :root {
         color-scheme: light;
-        --ink: #17272b;
-        --muted: #587078;
-        --paper: #f5f7f4;
-        --teal: #087d77;
-        --line: #cdd9d5;
-        --copper: #be9b6d;
+        --ink: #241a0c;
+        --muted: #746348;
+        --paper: #fbf8f1;
+        --gold: #b07020;
+        --line: #dccba9;
+        --copper: #e0a040;
       }
       * {
         box-sizing: border-box;
@@ -46,7 +46,7 @@
         font: inherit;
       }
       :focus-visible {
-        outline: 2px solid #39cdb5;
+        outline: 2px solid #f0c060;
         outline-offset: 4px;
       }
       .wrap {
@@ -58,8 +58,8 @@
         min-height: clamp(570px, 78svh, 780px);
         isolation: isolate;
         overflow: hidden;
-        background: #071719;
-        color: #f4f8f6;
+        background: #050505;
+        color: #f0e090;
         display: flex;
         flex-direction: column;
       }
@@ -74,7 +74,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(4, 17, 19, 0.2);
+        background: rgba(0, 0, 0, 0.2);
         z-index: -1;
       }
       .hero::after {
@@ -86,7 +86,7 @@
         background-image: linear-gradient(
           90deg,
           transparent calc(50% - 0.5px),
-          #b0c9bf 50%,
+          #e0a040 50%,
           transparent calc(50% + 0.5px)
         );
       }
@@ -96,7 +96,7 @@
         justify-content: space-between;
         gap: 20px;
         min-height: 98px;
-        border-bottom: 1px solid #ffffff40;
+        border-bottom: 1px solid #f0c06040;
       }
       .wordmark {
         display: inline-flex;
@@ -109,7 +109,7 @@
         white-space: nowrap;
       }
       .wordmark span {
-        color: #c8ad86;
+        color: #e0a040;
         font-size: 13px;
         font-weight: 500;
       }
@@ -121,15 +121,15 @@
       .nav-link {
         font-size: 13px;
         font-weight: 600;
-        color: #e0ece8;
+        color: #f0e090;
       }
       .nav-link:hover,
       .footer a:hover {
-        color: #76e3cf;
+        color: #f0c060;
       }
       .locale {
         display: inline-flex;
-        border: 1px solid #a9c6bc88;
+        border: 1px solid #e0a04088;
         padding: 3px;
         border-radius: 4px;
         gap: 2px;
@@ -137,7 +137,7 @@
       .locale button {
         border: 0;
         border-radius: 2px;
-        color: #f4f8f6;
+        color: #f0e090;
         background: transparent;
         cursor: pointer;
         padding: 5px 10px;
@@ -146,8 +146,8 @@
         min-width: 38px;
       }
       .locale button[aria-pressed="true"] {
-        background: #eff8f4;
-        color: #193c3c;
+        background: #f0e090;
+        color: #302006;
       }
       .hero-content {
         flex: 1;
@@ -171,7 +171,7 @@
       .orbit-ring {
         position: absolute;
         inset: 11%;
-        border: 1px solid #8fc8bb55;
+        border: 1px solid #e0a04055;
         border-radius: 50%;
       }
       .orbit-ring::before,
@@ -179,13 +179,13 @@
         content: "";
         position: absolute;
         inset: 14%;
-        border: 1px solid #d6b17b4f;
+        border: 1px solid #f0c0605c;
         border-radius: 50%;
         transform: rotate(62deg) scaleY(0.43);
       }
       .orbit-ring::after {
         inset: -8%;
-        border-color: #76d8c336;
+        border-color: #c080304d;
         transform: rotate(-24deg) scaleY(0.56);
       }
       .orbit-core {
@@ -193,10 +193,10 @@
         inset: 35%;
         display: grid;
         place-items: center;
-        border: 1px solid #e1c28a88;
+        border: 1px solid #f0c06099;
         border-radius: 50%;
-        background: #0d2b2d;
-        box-shadow: 0 0 70px #49c6af38;
+        background: #171006;
+        box-shadow: 0 0 70px #e0a04038;
         font:
           600 clamp(18px, 2vw, 26px) Outfit,
           sans-serif;
@@ -207,14 +207,14 @@
         place-items: center;
         width: 39px;
         aspect-ratio: 1;
-        border: 1px solid #bfddd399;
+        border: 1px solid #e0b05099;
         border-radius: 50%;
-        background: #0b2426;
-        color: #f1d39f;
+        background: #100c05;
+        color: #f0e090;
         font:
           700 12px Outfit,
           sans-serif;
-        box-shadow: 0 0 24px #48cbb32e;
+        box-shadow: 0 0 24px #e0a04038;
       }
       .orbit-node::after {
         content: attr(data-word);
@@ -222,7 +222,7 @@
         left: 50%;
         top: calc(100% + 7px);
         translate: -50% 0;
-        color: #b9d0cb;
+        color: #d8bd89;
         font:
           600 9px "DM Sans",
           sans-serif;
@@ -249,7 +249,7 @@
         top: 31%;
       }
       .eyebrow {
-        color: #b8d4cb;
+        color: #e0b050;
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
@@ -272,7 +272,7 @@
       }
       .hero .sublead {
         font-size: 16px;
-        color: #c4d6d3;
+        color: #d9c8a5;
         max-width: 515px;
         margin: 24px 0 36px;
       }
@@ -298,22 +298,22 @@
         transform: translateY(-2px);
       }
       .action.primary {
-        background: #bbdfce;
-        color: #133531;
+        background: #e0a040;
+        color: #130e05;
       }
       .action.secondary {
-        color: #f2f7f4;
-        border: 1px solid #a9c6bc99;
+        color: #f0e090;
+        border: 1px solid #e0a04099;
       }
       .hero-footer {
         display: flex;
         justify-content: space-between;
         gap: 24px;
         padding: 18px 0;
-        border-top: 1px solid #ffffff40;
+        border-top: 1px solid #f0c06040;
         font-size: 11px;
         font-weight: 700;
-        color: #b9d3cc;
+        color: #d8bd89;
       }
       .section {
         padding-block: clamp(76px, 10vw, 130px);
@@ -324,7 +324,7 @@
         gap: 40px;
       }
       .section-number {
-        color: var(--teal);
+        color: var(--gold);
         font-size: 12px;
         font-weight: 700;
       }
@@ -345,19 +345,19 @@
         padding-top: 0;
       }
       .meaning {
-        background: #e7eeea;
+        background: #f7f0e2;
         border-block: 1px solid var(--line);
       }
       .meaning-grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         margin-top: 55px;
-        border-top: 1px solid #aebfba;
+        border-top: 1px solid #d0bc94;
       }
       .meaning-item {
         min-width: 0;
         padding: 24px 16px 28px 0;
-        border-right: 1px solid #aebfba;
+        border-right: 1px solid #d0bc94;
       }
       .meaning-item:last-child {
         border-right: 0;
@@ -365,7 +365,7 @@
       }
       .meaning-letter {
         display: block;
-        color: var(--teal);
+        color: var(--gold);
         font:
           600 46px/1 Outfit,
           sans-serif;
@@ -399,7 +399,7 @@
         font:
           500 13px Outfit,
           sans-serif;
-        color: var(--teal);
+        color: var(--gold);
       }
       .service h3 {
         font:
@@ -413,11 +413,11 @@
         max-width: 410px;
       }
       .statement {
-        background: #163235;
-        color: #f2f8f3;
+        background: #171006;
+        color: #f8e8bd;
       }
       .statement .section-number {
-        color: #a3e1ca;
+        color: #f0c060;
       }
       .statement h2 {
         max-width: 900px;
@@ -425,13 +425,13 @@
       }
       .statement p {
         max-width: 610px;
-        color: #b7ceca;
+        color: #d6c39d;
         font-size: 18px;
         margin: 26px 0 0;
       }
       .footer {
-        background: #0f1b20;
-        color: #eaf3ef;
+        background: #050505;
+        color: #f0e090;
         padding: 45px 0;
       }
       .footer-inner {
@@ -441,7 +441,7 @@
         gap: 24px;
       }
       .footer p {
-        color: #9ab5ad;
+        color: #b79a65;
         margin: 12px 0 0;
         font-size: 13px;
       }
@@ -463,7 +463,7 @@
           min-height: 650px;
         }
         .hero::before {
-          background: rgba(4, 17, 19, 0.34);
+          background: rgba(0, 0, 0, 0.34);
         }
         .hero-content {
           padding-block: 75px;
@@ -507,7 +507,7 @@
           gap: 0 16px;
           padding: 17px 0;
           border-right: 0;
-          border-bottom: 1px solid #aebfba;
+          border-bottom: 1px solid #d0bc94;
         }
         .meaning-item:last-child {
           border-bottom: 0;
@@ -849,9 +849,9 @@
           width,
           height,
         );
-        background.addColorStop(0, "#061417");
-        background.addColorStop(0.55, "#0a2426");
-        background.addColorStop(1, "#12282a");
+        background.addColorStop(0, "#020202");
+        background.addColorStop(0.55, "#100b04");
+        background.addColorStop(1, "#241606");
         brandContext.fillStyle = background;
         brandContext.fillRect(0, 0, width, height);
 
@@ -863,9 +863,9 @@
           destinationY,
           Math.max(width, height) * 0.42,
         );
-        dawn.addColorStop(0, "rgba(229, 191, 126, 0.34)");
-        dawn.addColorStop(0.18, "rgba(79, 207, 180, 0.16)");
-        dawn.addColorStop(1, "rgba(7, 23, 25, 0)");
+        dawn.addColorStop(0, "rgba(240, 192, 96, 0.38)");
+        dawn.addColorStop(0.18, "rgba(224, 160, 64, 0.18)");
+        dawn.addColorStop(1, "rgba(5, 5, 5, 0)");
         brandContext.fillStyle = dawn;
         brandContext.fillRect(0, 0, width, height);
 
@@ -881,11 +881,11 @@
             0,
             Math.PI * 2,
           );
-          brandContext.fillStyle = `rgba(190, 226, 215, ${pulse})`;
+          brandContext.fillStyle = `rgba(240, 224, 144, ${pulse})`;
           brandContext.fill();
         });
 
-        brandContext.strokeStyle = "rgba(123, 205, 186, 0.14)";
+        brandContext.strokeStyle = "rgba(192, 128, 48, 0.2)";
         brandContext.lineWidth = 1;
         for (let lane = -5; lane <= 5; lane += 1) {
           brandContext.beginPath();
@@ -910,7 +910,7 @@
         brandContext.beginPath();
         brandContext.moveTo(0, horizonY);
         brandContext.lineTo(width, horizonY);
-        brandContext.strokeStyle = "rgba(222, 188, 128, 0.45)";
+        brandContext.strokeStyle = "rgba(240, 192, 96, 0.52)";
         brandContext.stroke();
 
         if (!reducedMotion.matches) requestAnimationFrame(drawBrandField);

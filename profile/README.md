@@ -1,17 +1,21 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:071A2B,25:0E7490,55:4F46E5,80:7C3AED,100:DB2777&text=AVORA%20LABS&fontSize=62&fontColor=FFFFFF&fontAlign=50&fontAlignY=38&desc=A%20Vision%20of%20Radiant%20Advancement&descSize=18&descAlign=50&descAlignY=58&animation=fadeIn" alt="AVORA Labs — A Vision of Radiant Advancement" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:050505,25:171006,48:805010,66:E0A040,82:906010,100:050505&text=AVORA%20LABS&fontSize=62&fontColor=F0E090&fontAlign=50&fontAlignY=38&desc=WHERE%20LIGHT%20BEGINS&descSize=18&descAlign=50&descAlignY=58&animation=fadeIn" alt="AVORA Labs — Where Light Begins" />
 
 <br />
 
-<img src="https://img.shields.io/badge/Software%20Solutions-0EA5E9?style=for-the-badge" alt="Software Solutions" />
-<img src="https://img.shields.io/badge/Data%20Platforms-6366F1?style=for-the-badge" alt="Data Platforms" />
-<img src="https://img.shields.io/badge/Management%20Systems-A855F7?style=for-the-badge" alt="Management Systems" />
+<img src="https://github.com/AVORA-Labs.png?size=180" width="112" alt="AVORA Labs logo" />
 
 <br /><br />
 
-<a href="#-giới-thiệu"><img src="https://img.shields.io/badge/VI-Tiếng%20Việt-0F766E?style=flat-square" alt="Tiếng Việt" /></a>
-<a href="#-about-avora-labs"><img src="https://img.shields.io/badge/EN-English-4338CA?style=flat-square" alt="English" /></a>
+<img src="https://img.shields.io/badge/Software%20Solutions-E0A040?style=for-the-badge&labelColor=050505" alt="Software Solutions" />
+<img src="https://img.shields.io/badge/Data%20Platforms-C08030?style=for-the-badge&labelColor=050505" alt="Data Platforms" />
+<img src="https://img.shields.io/badge/Management%20Systems-906010?style=for-the-badge&labelColor=050505" alt="Management Systems" />
+
+<br /><br />
+
+<a href="#-giới-thiệu"><img src="https://img.shields.io/badge/VI-Tiếng%20Việt-E0A040?style=flat-square&labelColor=050505" alt="Tiếng Việt" /></a>
+<a href="#-about-avora-labs"><img src="https://img.shields.io/badge/EN-English-C08030?style=flat-square&labelColor=050505" alt="English" /></a>
 
 </div>
 
@@ -69,25 +73,25 @@ Tên gọi **AVORA** gợi về ánh bình minh, tầm nhìn và chuyển độn
 
 ### Software
 
-<img src="https://img.shields.io/badge/Business%20Applications-0284C7?style=for-the-badge" alt="Business Applications" />
-<img src="https://img.shields.io/badge/Workflow%20Automation-0891B2?style=for-the-badge" alt="Workflow Automation" />
-<img src="https://img.shields.io/badge/System%20Integration-0D9488?style=for-the-badge" alt="System Integration" />
+<img src="https://img.shields.io/badge/Business%20Applications-805010?style=for-the-badge" alt="Business Applications" />
+<img src="https://img.shields.io/badge/Workflow%20Automation-B07020?style=for-the-badge" alt="Workflow Automation" />
+<img src="https://img.shields.io/badge/System%20Integration-E0A040?style=for-the-badge" alt="System Integration" />
 
 <br /><br />
 
 ### Data
 
-<img src="https://img.shields.io/badge/Data%20Architecture-4F46E5?style=for-the-badge" alt="Data Architecture" />
-<img src="https://img.shields.io/badge/Business%20Intelligence-7C3AED?style=for-the-badge" alt="Business Intelligence" />
-<img src="https://img.shields.io/badge/Decision%20Support-9333EA?style=for-the-badge" alt="Decision Support" />
+<img src="https://img.shields.io/badge/Data%20Architecture-906010?style=for-the-badge" alt="Data Architecture" />
+<img src="https://img.shields.io/badge/Business%20Intelligence-C08030?style=for-the-badge" alt="Business Intelligence" />
+<img src="https://img.shields.io/badge/Decision%20Support-F0B050?style=for-the-badge" alt="Decision Support" />
 
 <br /><br />
 
 ### Management
 
-<img src="https://img.shields.io/badge/Operations%20Management-B45309?style=for-the-badge" alt="Operations Management" />
-<img src="https://img.shields.io/badge/Process%20Design-BE123C?style=for-the-badge" alt="Process Design" />
-<img src="https://img.shields.io/badge/Scalable%20Systems-DB2777?style=for-the-badge" alt="Scalable Systems" />
+<img src="https://img.shields.io/badge/Operations%20Management-805010?style=for-the-badge" alt="Operations Management" />
+<img src="https://img.shields.io/badge/Process%20Design-D09030?style=for-the-badge" alt="Process Design" />
+<img src="https://img.shields.io/badge/Scalable%20Systems-F0C060?style=for-the-badge" alt="Scalable Systems" />
 
 </div>
 
@@ -148,6 +152,6 @@ AVORA Labs develops technology around the way businesses actually operate. We be
 **Software · Data · Management**<br />
 Vietnam
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:071A2B,35:0E7490,70:4F46E5,100:7C3AED" alt="AVORA Labs footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:050505,35:805010,65:E0A040,100:050505" alt="AVORA Labs footer" />
 
 </div>
